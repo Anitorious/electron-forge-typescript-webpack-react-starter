@@ -1,5 +1,5 @@
-import * as React from 'react';
-import styled from 'styled-components';
+import * as React from "react";
+import styled from "styled-components";
 
 const Container = styled.div`
   flex: 1;
@@ -7,8 +7,6 @@ const Container = styled.div`
   padding: 2rem;
 `;
 
-export function App() {
-  return (
-    <Container>Hello world from React! Now with hot-reload!</Container>
-  );
+export function App(): React.ReactElement<Record<string, unknown>> {
+  return <Container>Hello world from React! Now with hot-reload!</Container>;
 }
